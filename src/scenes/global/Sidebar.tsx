@@ -10,7 +10,6 @@ import {
   ContactsOutlined,
   ReceiptOutlined,
   PersonOutline,
-  CalendarTodayOutlined,
   HelpOutline,
   BarChartOutlined,
   PieChartOutline,
@@ -160,13 +159,6 @@ const Sidebar = () => {
               title="Profile Form"
               to="/form"
               icon={<PersonOutline />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Calendar"
-              to="/calendar"
-              icon={<CalendarTodayOutlined />}
               selected={selected}
               setSelected={setSelected}
             />
