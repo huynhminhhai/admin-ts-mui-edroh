@@ -3,7 +3,7 @@ import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import Topbar from "./scenes/global/Topbar";
 import Sidebar from "./scenes/global/Sidebar";
-import { Bar, Calendar, Contacts, Dashboard, FAQ, Form, Geography, Invoices, Line, Pie, Team } from "./scenes";
+import { Bar, Contacts, Dashboard, FAQ, Form, Geography, Invoices, Line, Pie, Team } from "./scenes";
 
 
 function App() {
@@ -29,7 +29,6 @@ function App() {
               <Route path="/line" element={<Line />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/geography" element={<Geography />} />
-              <Route path="/calendar" element={<Calendar />} />
             </Routes>
           </main>
         </div>

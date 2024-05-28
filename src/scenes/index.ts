@@ -8,4 +8,3 @@ export { default as Pie } from './pie';
 export { default as Line } from './line';
 export { default as FAQ } from './faq';
 export { default as Geography } from './geography';
-export { default as Calendar } from './calendar';
