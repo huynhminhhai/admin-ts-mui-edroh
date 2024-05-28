@@ -95,7 +95,7 @@ const Sidebar = () => {
           {/* User */}
           {
             !isCollapsed &&
-            <Box mb='25px'>
+            <Box margin='0px 20px 25px' display='flex' gap='15px' alignItems='center'>
               <Box display='flex' justifyContent='center' alignItems='center'>
                 <img
                   alt="profile-user"
@@ -105,8 +105,8 @@ const Sidebar = () => {
                   style={{ cursor: 'pointer', borderRadius: '50%', objectFit: 'cover' }}
                 />
               </Box>
-              <Box textAlign='center'>
-                <Typography variant="h3" color={colors.grey[100]} fontWeight='bold' sx={{ m: '10px 0 2px 0' }}>Biendev</Typography>
+              <Box>
+                <Typography variant="h3" color={colors.grey[100]} fontWeight='bold' sx={{ m: '10px 0 5px 0' }}>Biendev</Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>VP Fancy Admin</Typography>
               </Box>
             </Box>
