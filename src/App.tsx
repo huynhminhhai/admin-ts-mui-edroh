@@ -6,9 +6,6 @@ function App() {
 
   const [theme, colorMode] = useMode()
 
-  console.log(theme)
-  console.log(colorMode)
-
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
