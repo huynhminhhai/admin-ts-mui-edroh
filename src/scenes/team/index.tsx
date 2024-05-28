@@ -1,10 +1,10 @@
 import { Typography, Box, useTheme } from "@mui/material"
-import { DataGrid, GridCellParams, GridColDef } from '@mui/x-data-grid'
+import { DataGrid, GridCellParams, GridColDef, GridToolbar } from '@mui/x-data-grid'
 import { tokens } from "../../theme"
 import { mockDataTeam } from "../../data/mockData"
 import { AdminPanelSettingsOutlined, LockOpenOutlined, SecurityOutlined } from "@mui/icons-material"
 import Header from "../../components/Header"
-import { UserAccess, UserRowData } from "../../interfaces/User"
+import { UserAccess, TeamRowData } from "../../interfaces/User"
 
 const Team = () => {
 
@@ -40,9 +40,9 @@ const Team = () => {
       flex: 1,
       headerAlign: 'center',
       align: 'center',
-      renderCell: ({ row }: GridCellParams<UserRowData>) => {
+      renderCell: ({ row }: GridCellParams<TeamRowData>) => {
 
-        const { access } = row as UserRowData
+        const { access } = row as TeamRowData
 
         return (
           <Box
@@ -101,10 +101,16 @@ const Team = () => {
           "& .MuiCheckbox-root": {
             color: `${colors.greenAccent[200]} !important`,
           },
+          "& .MuiDataGrid-toolbarContainer .MuiButton-text": {
+            color: `${colors.grey[100]} !important`,
+            marginBottom: '5px'
+          },
         }}>
         <DataGrid
+          checkboxSelection
           rows={mockDataTeam}
           columns={columns}
+          components={{ Toolbar: GridToolbar }}
         />
       </Box>
     </Box>

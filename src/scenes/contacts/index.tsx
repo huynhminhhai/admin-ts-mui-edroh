@@ -90,9 +90,11 @@ const Contact = () => {
           },
           "& .MuiDataGrid-toolbarContainer .MuiButton-text": {
             color: `${colors.grey[100]} !important`,
+            marginBottom: '5px'
           },
         }}>
         <DataGrid
+          checkboxSelection
           rows={mockDataContacts}
           columns={columns}
           components={{ Toolbar: GridToolbar }}
