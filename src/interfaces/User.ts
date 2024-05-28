@@ -21,3 +21,12 @@ export interface InvoicesRowData {
   phone: string;
   date: string;
 }
+
+export interface IProfileForm {
+  firstName: string;
+  lastName: string;
+  email: string;
+  contact: string;
+  address1: string;
+  address2: string;
+}
