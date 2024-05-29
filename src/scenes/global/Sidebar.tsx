@@ -57,10 +57,10 @@ const Sidebar = () => {
         padding: '5px 35px 5px 20px !important'
       },
       '& .pro-inner-item:hover': {
-        color: '#868dfb !important'
+        color: '#5d547c !important'
       },
       '& .pro-menu-item.active': {
-        color: '#6870fa !important'
+        color: '#5d547c !important'
       },
     }}>
       <ProSidebar width='300px' collapsed={isCollapsed}>

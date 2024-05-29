@@ -4,7 +4,6 @@ import Header from "../../components/Header"
 import { mockTransactions } from "../../data/mockData"
 import { Download, EmailOutlined, PointOfSaleOutlined, PersonAdd, Traffic } from "@mui/icons-material"
 import BarChart from "../../components/Bar-chart"
-import PieChart from "../../components/Pie-chart"
 import GeographyChart from "../../components/Geo-chart"
 import LineChart from "../../components/Line-chart"
 import StatBox from "../../components/StatBox"
@@ -254,7 +253,7 @@ const Dashboard = () => {
           >
             <ProgressCircle size="125" />
             <Typography variant="h5" color={colors.greenAccent[500]} sx={{ mt: '15px' }}>$48,352 revenue generated</Typography>
-            <Typography>Includes extra misc expenditures and costs</Typography>
+            <Typography fontSize='12px'>Includes extra misc expenditures and costs</Typography>
           </Box>
         </Box>
 
